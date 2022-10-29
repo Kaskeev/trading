@@ -146,6 +146,7 @@
   margin: 0 auto;
   width: 220px;
   height: 68px;
+  z-index: 800;
 }
 .h__bottom-btn button {
   z-index: 999;
