@@ -29,11 +29,11 @@
 }
 .content__gradient-r {
   position: absolute;
-  top: -10%;
+  top: 5%;
   right: 10%;
   color: #fff;
   width: 800px;
-  height: 800px;
+  height: 700px;
   filter: blur(100px);
   background: linear-gradient(
     180deg,
@@ -41,7 +41,7 @@
     rgba(40, 0, 153, 0.115) 91.72%
   );
   border-radius: 2.71815e7px;
-  transform: rotate(181.65deg);
+  transform: rotate(251.65deg);
   z-index: -500;
 }
 .scroll-down {
