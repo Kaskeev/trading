@@ -5,6 +5,7 @@ import chart from "../../assets/Chart.png";
 import arrowBlue from "../../assets/arrow-blue.svg";
 import arrowPink from "../../assets/arrow-pink.svg";
 import wrapperLogo from "../../assets/wrapper-img.png";
+
 const Content = () => {
   return (
     <div className="content" id="content">
@@ -44,7 +45,7 @@ const Content = () => {
                 orders to buy and sell from the same order ticket.
               </p>
             </div>
-            <button className="content__btn">Start Now</button>
+            <button className="coolBeans">Start Now</button>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import styles from "../Header/Header.css";
-import picture from "../../assets/header-right.png";
+import picture from "../../assets/header-banner.png";
 import arrowDown from "../../assets/arrow-down.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-scroll";
 import Menu from "../Menu/Menu";
 import { useState } from "react";
+import { Slant as Hamburger } from "hamburger-react";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -29,7 +29,7 @@ const Header = () => {
               <ul className="header__l-list">
                 {items.map((item) => (
                   <li className="header__list-link">
-                    <a>{item.value}</a>
+                    <span>{item.value}</span>
                   </li>
                 ))}
               </ul>
@@ -38,12 +38,21 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div
+          <Hamburger
+            easing="ease-in"
+            label="Show menu"
+            direction="left"
+            size={28}
+            color="white"
+            duration={0.4}
+            onToggle={() => setMenuActive(!menuActive)}
+          />
+          {/* <div
             className="burger__btn"
             onClick={() => setMenuActive(!menuActive)}
           >
             <span />
-          </div>
+          </div> */}
         </nav>
       </div>
       <div className="header__block-bottom" data-aos={"fade-up"}>

@@ -74,7 +74,7 @@ body {
   src: local("MazzardH"),
     url("./assets/font/MazzardH-Regular.woff") format("woff");
 }
-@media (max-width: 780px) {
+@media (max-width: 1260px) {
   .ellipse1,
   .ellipse2,
   .ellipse3,
