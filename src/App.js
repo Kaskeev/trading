@@ -2,16 +2,22 @@ import "./App.css";
 import Content from "./components/Content/Content";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import ellipse1 from "./assets/Ellipse1.png";
+import ell1 from "./assets/Ellipse1.png";
+import ell2 from "./assets/Ellipse2.png";
+import ell3 from "./assets/Ellipse3.png";
+import ell4 from "./assets/Ellipse4.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   return (
     <div className="App">
-      <div className="ellipse1"></div>
-      <div className="ellipse2"></div>
+      <img src={ell1} className="ellipse1"></img>
+      <img src={ell2} className="ellipse2"></img>
+      <img src={ell3} className="ellipse3"></img>
+      <img src={ell4} className="ellipse4"></img>
+      {/* <div className="ellipse2"></div>
       <div className="ellipse3"></div>
-      <div className="ellipse4"></div>
+      <div className="ellipse4"></div> */}
       <Header />
       <Content />
       <Main />

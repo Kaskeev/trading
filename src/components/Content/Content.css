@@ -112,6 +112,7 @@
 .content__block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 180px;
 }
 .content__block-l {
   margin-top: 65px;
@@ -148,12 +149,11 @@
 .wrapper__block {
   margin-top: 180px;
   display: flex;
-  max-width: 80%;
-  margin: 0 auto;
 }
 .wrapper__block-l {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .wrapper__l-first {
   margin-top: 15%;
@@ -229,19 +229,29 @@
   height: 70px;
 }
 .wrapper__right-text {
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 00;
   font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.02em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
 }
+.of {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #aaaaaa;
+}
 .wrapper__block-r {
   position: relative;
   max-width: 335px;
   margin-left: 47px;
 }
-.wrapper__right-text span {
+.platform {
   font-size: 40px;
   background: linear-gradient(
     89.95deg,
@@ -253,6 +263,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  font-weight: 600;
 }
 .wrapper__text-bottom {
   margin-top: 21px;
@@ -262,6 +273,8 @@
   letter-spacing: 0.01em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
+
+  opacity: 0.8;
 }
 .line {
   opacity: 0.8;
@@ -699,6 +712,13 @@
   .wrapper__block {
     margin-top: 50px;
     flex-direction: column-reverse;
+  }
+  .content__block-r {
+    margin-left: 80px;
+  }
+  .wrapper__block-r {
+    margin-left: 0px;
+    margin-bottom: 50px;
     max-width: 100%;
   }
 }
@@ -707,6 +727,14 @@
     margin-top: 50px;
     width: 330px;
     height: 350px;
+  }
+}
+@media (max-width: 865px) {
+  .content__block {
+    flex-direction: column;
+  }
+  .content__block-r {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -720,7 +748,6 @@
     flex-direction: column;
   }
   .content__block-r {
-    margin-top: 50px;
     margin-left: 0;
   }
   .wrapper__block {
@@ -728,8 +755,6 @@
     margin-top: 80px;
   }
   .wrapper__block-l {
-    margin-left: 10%;
-    margin-right: 10%;
     flex-direction: column;
     margin-top: 80px;
   }

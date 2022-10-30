@@ -48,68 +48,69 @@ const Content = () => {
             <button className="coolBeans">Start Now</button>
           </div>
         </div>
-      </div>
-      <div className="wrapper__block">
-        <div className="wrapper__block-l" data-aos={"fade-right"}>
-          <div className="wrapper__l-first">
-            <button className="wrapper__first-form wrapper-self">
-              Artificial Intelligence
-            </button>
-            <div className="line" id="line1"></div>
-            <button className="wrapper__first-form wrapper-self2">
-              Storage Networks
-            </button>
-            <div className="line" id="line2"></div>
-            <button className="wrapper__first-form  wrapper__form">
-              P2P Networks
-            </button>
-            <div className="line" id="line3"></div>
-          </div>
-          <div className="wrapper__l-second">
-            <div className="line" id="line4"></div>
-            <div className="line" id="line5"></div>
-            <div className="line" id="line6"></div>
-            <div className="line" id="line7"></div>
-            <div id="line8"></div>
-            <button className="wrapper__first-form">Public Data</button>
-            <button className="wrapper__first-form wrapper__form-block">
-              Encrypted Private Data *
-            </button>
-          </div>
-          <div className="wrapper__l-third wrapper__l-first">
-            <img className="wrapper__logo" src={wrapperLogo} alt="" />.
-            <p className="wrapper__text">
-              Easy to use digital service and exclusive personal service for our
-              active traders
-            </p>
-            <div className="wrapper__first-mobile">
-              <button className="wrapper__first-form">Indexing</button>
-              <button className="wrapper__first-form">API</button>
+
+        <div className="wrapper__block ">
+          <div className="wrapper__block-l" data-aos={"fade-right"}>
+            <div className="wrapper__l-first">
+              <button className="wrapper__first-form wrapper-self">
+                Artificial Intelligence
+              </button>
+              <div className="line" id="line1"></div>
+              <button className="wrapper__first-form wrapper-self2">
+                Storage Networks
+              </button>
+              <div className="line" id="line2"></div>
+              <button className="wrapper__first-form  wrapper__form">
+                P2P Networks
+              </button>
+              <div className="line" id="line3"></div>
             </div>
-            <div id="wrapper">
-              <div id="wrapper-inner">
-                <div id="scroll-down">
-                  <span class="arrow-down"></span>
-                </div>
-                <div id="scroll-up">
-                  <span class="arrow-up"></span>
+            <div className="wrapper__l-second">
+              <div className="line" id="line4"></div>
+              <div className="line" id="line5"></div>
+              <div className="line" id="line6"></div>
+              <div className="line" id="line7"></div>
+              <div id="line8"></div>
+              <button className="wrapper__first-form">Public Data</button>
+              <button className="wrapper__first-form wrapper__form-block">
+                Encrypted Private Data *
+              </button>
+            </div>
+            <div className="wrapper__l-third wrapper__l-first">
+              <img className="wrapper__logo" src={wrapperLogo} alt="" />.
+              <p className="wrapper__text">
+                Easy to use digital service and exclusive personal service for
+                our active traders
+              </p>
+              <div className="wrapper__first-mobile">
+                <button className="wrapper__first-form">Indexing</button>
+                <button className="wrapper__first-form">API</button>
+              </div>
+              <div id="wrapper">
+                <div id="wrapper-inner">
+                  <div id="scroll-down">
+                    <span class="arrow-down"></span>
+                  </div>
+                  <div id="scroll-up">
+                    <span class="arrow-up"></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div className="wrapper__block-r" data-aos={"fade-left"}>
+            <p className="wrapper__right-text">
+              The future <span className="of">of</span> Cryptocurrency trading{" "}
+              <span className="platform">platform</span>
+            </p>
+            <p className="wrapper__text-bottom">
+              Take advantage of time and sales, futures spread orders and depth
+              trader — plus, trade directly from charts.
+            </p>
+            <button className="learnMore">Learn more</button>
+          </div>
+          <div className="ellipse"></div>
         </div>
-        <div className="wrapper__block-r" data-aos={"fade-left"}>
-          <p className="wrapper__right-text">
-            The future <span>of</span> Cryptocurrency trading{" "}
-            <span>platform</span>
-          </p>
-          <p className="wrapper__text-bottom">
-            Take advantage of time and sales, futures spread orders and depth
-            trader — plus, trade directly from charts.
-          </p>
-          <button className="learnMore">Learn more</button>
-        </div>
-        <div className="ellipse"></div>
       </div>
     </div>
   );
