@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Main/Main.css";
 import math from "../../assets/math.png";
+import math2 from "../../assets/math2.png";
 import ellipse from "../../assets/ellipse.png";
 
 const Main = () => {
@@ -9,17 +10,23 @@ const Main = () => {
       <div className="ellipse-main"></div>
       <div className="main__left">
         <div className="ellipse-main2"></div>
-        <div className="main__left-bottom card__block ">
+        <div className="main__left-bottom">
           <div className="main__left-img">
             <img src={math} alt="" />
           </div>
-          <div className="main__left-content">
-            <h3 className="main__left-title">Spot & Margin</h3>
-            <p className="main__left-text">
-              Trade <span>200+</span> pairs with up to 10x leverage
-            </p>
+          <div className="main__left-img2">
+            <img src={math2} alt="" />
           </div>
-          <button className="main__btn main__btn-form">Learn More</button>{" "}
+          <div className="main__left-content">
+            <h3 className="main__left-title main__left-absolute">
+              Spot & Margin
+            </h3>
+            <p className="main__left-text">
+              Trade <span>200 </span>
+              pairs with up to 10x leverage
+            </p>
+            <button className="main__btn main__btn-form">Learn More</button>
+          </div>{" "}
         </div>
       </div>
       <div className="main__right">
@@ -50,8 +57,8 @@ const Main = () => {
               <p className="main__top-text main__bottom-text">
                 Trade anytime, anywhere
               </p>
-              <button className="main__btn">Learn More</button>
             </div>
+            <button className="main__btn main__btn-first">Learn More</button>
             <div className="main__bottom-img">
               <img src={ellipse} alt="" />
             </div>

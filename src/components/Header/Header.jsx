@@ -4,12 +4,12 @@ import picture from "../../assets/header-banner.png";
 import arrowDown from "../../assets/arrow-down.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Menu from "../Menu/Menu";
+import Menu from "../../assets/menu.png";
 import { useState } from "react";
 import { Slant as Hamburger } from "hamburger-react";
 
 const Header = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  // const [menuActive, setMenuActive] = useState(false);
   AOS.init({
     duration: 2200,
   });
@@ -45,14 +45,8 @@ const Header = () => {
             size={28}
             color="white"
             duration={0.4}
-            onToggle={() => setMenuActive(!menuActive)}
+            // onToggle={() => setMenuActive(!menuActive)}
           />
-          {/* <div
-            className="burger__btn"
-            onClick={() => setMenuActive(!menuActive)}
-          >
-            <span />
-          </div> */}
         </nav>
       </div>
       <div className="header__block-bottom" data-aos={"fade-up"}>
@@ -76,12 +70,12 @@ const Header = () => {
         </div>
       </div>
 
-      <Menu
+      {/* <Menu
         active={menuActive}
         setActive={setMenuActive}
         header={"C"}
         items={items}
-      />
+      /> */}
     </header>
   );
 };

@@ -16,7 +16,7 @@
   height: 100vh;
   backdrop-filter: blur(2px);
   position: absolute;
-  right: 100%;
+  right: 90%;
 }
 .menu__content {
   display: flex;
