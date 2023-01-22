@@ -28,6 +28,18 @@
   justify-content: space-between;
   list-style-type: none;
 }
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.shadow2 {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 50;
+}
 .header__list-link {
   cursor: pointer !important;
   z-index: 500;
@@ -70,20 +82,20 @@
   border-radius: 10px;
 }
 .header__r-btn::after {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   width: 20px;
   height: 20px;
   margin-left: 7px;
-  background: url("../../assets/arrow-left.svg") 0 0 no-repeat;
+  background: url('../../assets/arrow-left.svg') 0 0 no-repeat;
   background-size: cover;
 }
 .header__block-bottom {
   position: relative;
   height: 80vh;
   background-color: black;
-  background-image: url("../../assets/Pattern.png");
+  background-image: url('../../assets/Pattern.png');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -98,6 +110,7 @@
   text-transform: uppercase;
   color: #aaaaaa;
   margin-bottom: 30px;
+  z-index: 999;
 }
 .h__bottom-text {
   font-style: normal;
@@ -247,6 +260,7 @@
   }
   .h__bottom-pic {
     top: 70%;
+    margin-top: 0;
   }
   .h__bottom-btn button {
     width: 200px;
@@ -259,6 +273,13 @@
 }
 
 @media (max-width: 520px) {
+  .shadow {
+    width: 300px;
+  }
+  .shadow2 {
+    top: 70%;
+    width: 70%;
+  }
   .h__bottom-pic img {
     width: 300px;
   }
@@ -306,7 +327,7 @@
     right: 25px;
   }
   .h__bottom-pic {
-    top: 80%;
+    top: 50%;
     margin-top: 0;
   }
   .menu {
@@ -321,10 +342,11 @@
 }
 @media (max-width: 425px) {
   .h__bottom-pic {
-    top: 95%;
+    left: 40%;
+    top: 80%;
   }
   .h__bottom-pic img {
-    width: 250px;
+    width: 350px;
   }
 }
 @media (max-width: 375px) {

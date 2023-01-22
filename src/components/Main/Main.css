@@ -110,7 +110,7 @@
   font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
   color: #ffffff;
   margin-top: 51px;
   opacity: 1;
@@ -119,8 +119,11 @@
   word-wrap: break-word;
 }
 .main__left-text span {
-  font-size: 40px;
   font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
   background: linear-gradient(
     89.95deg,
     #487fff -1.65%,
@@ -315,6 +318,24 @@
   }
 }
 @media (max-width: 510px) {
+  .main__btn-bottom {
+    bottom: 55%;
+  }
+  .main__bottom-block {
+    display: block;
+  }
+  .main__bottom-img img {
+    object-fit: scale-down;
+  }
+  .main__left-img2 img {
+    object-fit: scale-down;
+  }
+  .main__bottom-img {
+    object-fit: cover;
+    max-width: 100%;
+    padding-top: 0;
+    max-height: 100%;
+  }
   .main__left-bottom {
     min-height: 0;
     height: 520px;

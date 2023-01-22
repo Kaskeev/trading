@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "../Main/Main.css";
-import math from "../../assets/math.png";
-import math2 from "../../assets/math2.png";
-import ellipse from "../../assets/ellipse.png";
+import React from 'react'
+import styles from '../Main/Main.css'
+import math from '../../assets/math.png'
+import math2 from '../../assets/math2.png'
+import ellipse from '../../assets/ellipse.png'
 
 const Main = () => {
   return (
@@ -22,11 +22,11 @@ const Main = () => {
               Spot & Margin
             </h3>
             <p className="main__left-text">
-              Trade <span>200 </span>
+              Trade <span>200+ </span>
               pairs with up to 10x leverage
             </p>
             <button className="main__btn main__btn-form">Learn More</button>
-          </div>{" "}
+          </div>{' '}
         </div>
       </div>
       <div className="main__right">
@@ -44,7 +44,9 @@ const Main = () => {
             <div className="card__blocks">
               <div className="main__top-block card__block-hover">
                 <h4 className="main__top-title">Trading Arena</h4>
-                <p className="main__top-text">Prize pools worth up to</p>
+                <p className="main__top-text">
+                  Prize pools worth up to USD 1,000,000
+                </p>
                 <button className="main__btn">Learn More</button>
               </div>
             </div>
@@ -58,7 +60,9 @@ const Main = () => {
                 Trade anytime, anywhere
               </p>
             </div>
-            <button className="main__btn main__btn-first">Learn More</button>
+            <button className="main__btn main__btn-first main__btn-bottom">
+              Learn More
+            </button>
             <div className="main__bottom-img">
               <img src={ellipse} alt="" />
             </div>
@@ -66,7 +70,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

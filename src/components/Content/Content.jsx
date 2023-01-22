@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "../Content/Content.css";
-import { Link, animateScroll as scroll } from "react-scroll";
-import chart from "../../assets/Chart.png";
-import arrowBlue from "../../assets/arrow-blue.svg";
-import arrowPink from "../../assets/arrow-pink.svg";
-import wrapperLogo from "../../assets/wrapper-img.png";
+import React from 'react'
+import styles from '../Content/Content.css'
+import { Link, animateScroll as scroll } from 'react-scroll'
+import chart from '../../assets/Chart.png'
+import arrowBlue from '../../assets/arrow-blue.svg'
+import arrowPink from '../../assets/arrow-pink.svg'
+import wrapperLogo from '../../assets/wrapper-img.png'
 
 const Content = () => {
   return (
@@ -26,10 +26,10 @@ const Content = () => {
         <p className="content__text">Global technologies</p>
         <div className="content__gradient-r"></div>
         <div className="content__block">
-          <div className="content__block-l" data-aos={"fade-right"}>
+          <div className="content__block-l" data-aos={'fade-right'}>
             <img src={chart} />
           </div>
-          <div className="content__block-r" data-aos={"fade-left"}>
+          <div className="content__block-r" data-aos={'fade-left'}>
             <h5 className="content__r-title">Level 1</h5>
             <div className="content__r-wrapper">
               <img src={arrowBlue} alt="" />
@@ -50,7 +50,7 @@ const Content = () => {
         </div>
 
         <div className="wrapper__block ">
-          <div className="wrapper__block-l" data-aos={"fade-right"}>
+          <div className="wrapper__block-l" data-aos={'fade-right'}>
             <div className="wrapper__l-first">
               <button className="wrapper__first-form wrapper-self">
                 Artificial Intelligence
@@ -86,6 +86,7 @@ const Content = () => {
                 <button className="wrapper__first-form">Indexing</button>
                 <button className="wrapper__first-form">API</button>
               </div>
+              <p className="wrapper-text">Consumers</p>
               <div id="wrapper">
                 <div id="wrapper-inner">
                   <div id="scroll-down">
@@ -98,9 +99,9 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="wrapper__block-r" data-aos={"fade-left"}>
+          <div className="wrapper__block-r" data-aos={'fade-left'}>
             <p className="wrapper__right-text">
-              The future <span className="of">of</span> Cryptocurrency trading{" "}
+              The future <span className="of">of</span> Cryptocurrency trading{' '}
               <span className="platform">platform</span>
             </p>
             <p className="wrapper__text-bottom">
@@ -113,7 +114,7 @@ const Content = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content

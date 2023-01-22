@@ -1,29 +1,33 @@
-import React, { useEffect } from "react";
-import styles from "../Header/Header.css";
-import picture from "../../assets/header-banner.png";
-import arrowDown from "../../assets/arrow-down.svg";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Menu from "../../assets/menu.png";
-import { useState } from "react";
-import { Slant as Hamburger } from "hamburger-react";
+import React, { useEffect } from 'react'
+import styles from '../Header/Header.css'
+import picture from '../../assets/header-banner.png'
+import arrowDown from '../../assets/arrow-down.svg'
+import shadow from '../../assets/Shadow-1.png'
+import shadow2 from '../../assets/Shadow2.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import Menu from '../../assets/menu.png'
+import { useState } from 'react'
+import { Slant as Hamburger } from 'hamburger-react'
 
 const Header = () => {
   // const [menuActive, setMenuActive] = useState(false);
   AOS.init({
     duration: 2200,
-  });
+  })
   const items = [
-    { value: "Activities" },
-    { value: "Technology" },
-    { value: "R&D" },
-    { value: "Community" },
-  ];
+    { value: 'Activities' },
+    { value: 'Technology' },
+    { value: 'R&D' },
+    { value: 'Community' },
+  ]
   return (
     <header className="header">
+      <img className="shadow" src={shadow} />
+      <img className="shadow2" src={shadow2} />
       <div className="container">
         <nav className="header__block">
-          <div className="header-block-l" data-aos={"fade-right"}>
+          <div className="header-block-l" data-aos={'fade-right'}>
             <h1 className="header__logo">C</h1>
             <div className="navbar">
               <ul className="header__l-list">
@@ -33,7 +37,7 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="header__block-r" data-aos={"fade-left"}>
+              <div className="header__block-r" data-aos={'fade-left'}>
                 <button className="header__r-btn">Career</button>
               </div>
             </div>
@@ -49,7 +53,7 @@ const Header = () => {
           />
         </nav>
       </div>
-      <div className="header__block-bottom" data-aos={"fade-up"}>
+      <div className="header__block-bottom" data-aos={'fade-up'}>
         <div className="container">
           <h3 className="h__bottom-title">crypto trading</h3>
           <p className="h__bottom-text">Engineers Meet</p>
@@ -77,7 +81,7 @@ const Header = () => {
         items={items}
       /> */}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
